@@ -2,6 +2,12 @@
 
 Public versions of *Sapiens Novus — Constitutio Intermundia*. The text names no calendar date. Headings here follow the version in the file.
 
+## 1.02
+
+- Final cleanup of residual meta-commentary in V.32 Patrimonium and V.36 Scaena.
+- All "Taken from" / "Refused" framing removed; operative rules preserved.
+- Version bumped from published v1.01. Document is now free of editing traces.
+
 ## 1.01
 
 - Cleaned public release of all internal version notes, audit traces, and historical framing.

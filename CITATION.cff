@@ -3,7 +3,7 @@
 cff-version: 1.2.0
 title: "Sapiens Novus — Constitutio Intermundia"
 message: "If you cite this work, use the metadata in this file."
-version: "1.01"
+version: "1.02"
 date-released: 2026-11-02
 license: GPL-3.0-only
 repository-code: "https://github.com/human-terran/sapiens-novus"
@@ -12,4 +12,4 @@ authors:
   - name: human-terran
 abstract: >-
   A constitution and operating system for decentralized human settlements.
-  Public Release v1.01.
+  Public Release v1.02.

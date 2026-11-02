@@ -1,5 +1,5 @@
 **Sapiens Novus — Constitutio Intermundia**
-**Public Release v1.01**
+**Public Release v1.02**
 
 A constitution and operating system for decentralized human settlements. It prioritizes binary biological reality, measured energy surplus, individual responsibility, and sensor-driven outcomes over ideology or central control. It is built to self-heal, fork, and scale from Earth camps to interplanetary wells.
 
@@ -1922,7 +1922,7 @@ Status: **LOCKED**
 
 **CODEX:** Recurring goods, taken: written law that binds the desk; honest weights; a stored harvest; a road that pays back; a wall with a yeoman behind it; property a son can inherit; a contract that holds; a second book on the first book; an exam that measures a real task; medicine that publishes harm; a calendar; letters that move; a ship that returns; apprenticeship; the scientific test; competition between houses that does not become a civil war; a people that can say what it is; chosen load; the Baton handed young.
 
-Recurring kills, refused: tax-farm; guard-pay as a second purse the law cannot fire; coin-clip; bread without yield; a king the law cannot fire; slave mass that kills the yeoman; human sacrifice; caste lock; a priest on the mint; exam without a plant; pyramid vanity; eunuch court; overstretch; elite pile with no rotation; the lie as air; a dole that outruns the field.
+The following are void: tax-farm; guard-pay as a second purse the law cannot fire; coin-clip; bread without yield; a king the law cannot fire; slave mass that kills the yeoman; human sacrifice; caste lock; a priest on the mint; exam without a plant; pyramid vanity; eunuch court; overstretch; elite pile with no rotation; the lie as air; a dole that outruns the field.
 
 The Baton carries these lines in short form. History class is the proof, not a hymn. A new good that survives a meter joins the packet. A sermon does not.
 
@@ -1981,7 +1981,7 @@ Status: **LOCKED**
 
 **CODEX:** Stage, pitch, and song are lawful. Axiom 3 still holds: an actor may speak politics. Speech is not evidence, not office, not Gradus, not Franchise-weight, and not a meter. The Node grants no official amplification, no surplus-stage, and no exam-credit to a political sentence because a face is known. A Public Body that pays spectacle to install a creed is 6.10 plus 5.2.
 
-Taken from Rome and left as joint, not caste: *qui in scaenam prodierit* does not mint gravitas. Refused: infamy that unpersons, silences, or flogs a player as a class (7.40).
+A man who sells the display of his person does not thereby mint civic gravitas. Infamy that unpersons, silences, or flogs a player as a class is void (7.40).
 
 Private tickets are Axiom 5. They do not buy a chair. Node surplus spent on Scaena — sport, song, paid display — sits inside a published band after BOT, plant, clinic, wall, Schola, and Vigiles. Default band is 1% of daily mint. Breach is concentration plus 3.18. A ball-catcher or a singer may be loved. He is not therefore paid from the reactor as if he kept it.
 
