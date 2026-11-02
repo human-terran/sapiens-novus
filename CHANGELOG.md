@@ -1,10 +1,9 @@
 # Changelog
 
-Public versions of *Sapiens Novus — Constitutio Intermundia*. The text names no calendar date. Headings here follow the version in the file.
+## v1.0 — 2026-11-02 — Public Release
 
-## 1.0
+Refined public release of internal v1.26, as stated in the file's header.
 
-Public Release. The file calls this a refined public release of internal v1.26.
+## Versioning
 
-- Full instrument added as `sapiens-novus.md`.
-- Glossary entry **JI** carried a doubled backslash (`E\\\_net`), which renders as a visible backslash. It now uses the same escape as the VCI formula (`E\_net`), so the name renders as `E_net`. No word was changed.
+Every new published version of the text gets the next version number (v1.1, v1.2, ...). The text is changed only by the owner.

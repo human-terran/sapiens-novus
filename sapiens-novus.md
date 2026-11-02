@@ -202,7 +202,7 @@ Establish living order against decay. This is the sole metric to which this clai
 | Homo Novus                 | Directed-evolution successor on the long horizon. Not a caste-name for the living.                                                            |
 | Hostia Nulla               | No citizen is a lamb for a camera story. Triage of many versus few is Prioritas, not a sermon.                                                |
 | Interdictum                | Official motion without a live room does not run. Memory Halts. The triad judges.                                                             |
-| JI                         | Joule Index. Surplus in megajoules attributed to a person, times I/J, minus waste caused. Feeds VCI E\_net.                                   |
+| JI                         | Joule Index. Surplus in megajoules attributed to a person, times I/J, minus waste caused. Feeds VCI E\\\_net.                                 |
 | Lawfare                    | Process, delay, cost, or volume used to exhaust a person who has not lost on the merits.                                                      |
 | Limen                      | Department VIII. Birth, death, contact, gate. Lex tag LM.                                                                                     |
 | Lingua                     | Locked formal tongue. Co-opted fictions are struck: hate-crime, assault-rifle, assigned-at-birth, gender identity as legal sex.               |
