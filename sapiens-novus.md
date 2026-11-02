@@ -1,11 +1,11 @@
 **Sapiens Novus — Constitutio Intermundia**
-**Public Release v1.0**
+**Public Release v1.01**
 
 A constitution and operating system for decentralized human settlements. It prioritizes binary biological reality, measured energy surplus, individual responsibility, and sensor-driven outcomes over ideology or central control. It is built to self-heal, fork, and scale from Earth camps to interplanetary wells.
 
 ### Map of the File
 - **Praefatio** — What this instrument is.
-- **Heritas** — Method taken, costume refused.
+- **Heritas** — Inherited civil method.
 - **Alpha** — Biological inception.
 - **Ordo** — Department map.
 - **Glossary** — Locked definitions.
@@ -23,7 +23,6 @@ Pactum explains. Codex governs. Lex executes. Words are commands. Meters outrank
 
 ---
 
-*Refined public release of internal v1.26. Prior rooms remain intact. Hardening from prior audits retained. Operating-consciousness language, common-law lock, Schumann meter, and Cycle room included.*
 
 # 0. PRAEFATIO
 ###### RADIX > 0. PRAEFATIO
@@ -62,8 +61,6 @@ This file is not a dead empire under a new flag. Latin room-names are the file's
 Taken as method, not as altar: written law over mood; the magistrate bound; mixed triad; colony as seed; a pact with a well that can stand; spectacle without gravitas; hard drill without killing the weak child; open inquiry with a human sign.
 
 Common law is the land method: prior written room, named actor and act, no dual law, no priestly mouth. Maritime and admiralty forms are confined to Astra contracts (space, sea, orbital). They do not write terrestrial title, custody, Neutralization, or school.
-
-Refused from every empire that used these joints as cover: the slave as a thing; the father who kills his child as right; the leader as god; bread without yield; tribute that eats a well; sack when a contract would hold; a guard with a second purse; a people selected for death by stock.
 
 Expansion of human status is the aim. Foedus (8.17) precedes kinetic reduction when the well can keep BOT and the named Axioms. A raid is not owed a treaty.
 
@@ -202,7 +199,7 @@ Establish living order against decay. This is the sole metric to which this clai
 | Homo Novus                 | Directed-evolution successor on the long horizon. Not a caste-name for the living.                                                            |
 | Hostia Nulla               | No citizen is a lamb for a camera story. Triage of many versus few is Prioritas, not a sermon.                                                |
 | Interdictum                | Official motion without a live room does not run. Memory Halts. The triad judges.                                                             |
-| JI                         | Joule Index. Surplus in megajoules attributed to a person, times I/J, minus waste caused. Feeds VCI E\_net.                                   |
+| JI                         | Joule Index. Surplus in megajoules attributed to a person, times I/J, minus waste caused. Feeds VCI E\\\_net.                                 |
 | Lawfare                    | Process, delay, cost, or volume used to exhaust a person who has not lost on the merits.                                                      |
 | Limen                      | Department VIII. Birth, death, contact, gate. Lex tag LM.                                                                                     |
 | Lingua                     | Locked formal tongue. Co-opted fictions are struck: hate-crime, assault-rifle, assigned-at-birth, gender identity as legal sex.               |
@@ -843,7 +840,7 @@ Status: **LOCKED**
 
 Agoge is the professional track for militia-mode, Vigiles field work, Exercitus enlistment, and Cohors Praetoria. It is not open to a passer-by. Entry requires Cursus Gradus on the arms line at the published floor, Character floor, medical clearance, and a named master. The day's block is finished the day it is opened. A man who walks out mid-block without medical halt is dropped from the track for one SMW. Tours are published. This is not a club.
 
-Formation may begin early, under parents (Axiom 4) and Campus: load, forest survival, navigation, cold, hunger inside a published medical band, stoic drills, pair-conduct, and the weapons gate when the body is ready. Taken from Sparta: the young who will keep the wall are trained hard in wood and weather. Refused from Sparta: exposure of the weak infant, the child as discard, and cruelty as liturgy. A weak child is trained to the civic floor or medically excluded. He is not killed. He is not mocked as statute.
+Formation may begin early, under parents (Axiom 4) and Campus: load, forest survival, navigation, cold, hunger inside a published medical band, stoic drills, pair-conduct, and the weapons gate when the body is ready. A weak child is trained to the civic floor or medically excluded. He is not killed. He is not mocked as statute.
 
 Women on Agoge train the published female band and the weapons gate. They do not take the male mass-band as costume. Men take the harder band (2.4). Best-of-best means the published packet, not a slogan. Wanton harm of a trainee is a status offense. The track does not mint Franchise by sweat alone.
 
@@ -1889,7 +1886,7 @@ Status: **LOCKED**
 
 **PACTUM:** Take the working bone; leave the temple its keys.
 
-**CODEX:** Taken from the older book: do not murder; do not steal; do not swear a false name on a neighbor; let yes be yes; honest weights; honor the house that raised you; do not muzzle the worker; judge the act, not the costume; pull the beam from your own eye before you sit EEP; a people that will not name good and evil will eat itself. Refused: a priest who writes Root; a curse on a child for a father's crime; holy war as intake policy; a sacrifice that buys the mint. Axiom 12 holds. Private conscience stays Axiom 1.
+**CODEX:** Axiom 12 holds. Private conscience stays Axiom 1.
 
 **LEX 1AV:** The bone is kept. The temple does not etch.
 **LEX 2AV:** False witness is a charge, not a style.
@@ -1911,7 +1908,7 @@ Status: **LOCKED**
 
 **PACTUM:** Hand the gem; do not make the child mine the mountain again.
 
-**CODEX:** Each household and Node keeps a Living Baton: a short, dated, signed packet of what worked — maxims, failures, tools, recipes, plant notes, pair-conduct, the stoic drills, and the Patrimonium lines from 5.32. Vigil prunes rot and adds a proven line each SMW. Parents read it aloud before a child can read. School does not replace the house. The child improves the packet and hands it on. Taken from the porch: control what is yours; bear what is not; do not perform a feeling as if it were a law. Taken from other working bones: measure twice; keep your word; honor the living house; finish the job; do not worship your wounds. Names of schools are not statute. The drill is. A creed that wants the Baton as a catechism fails 5.30.
+**CODEX:** Each household and Node keeps a Living Baton: a short, dated, signed packet of what worked — maxims, failures, tools, recipes, plant notes, pair-conduct, the stoic drills, and the Patrimonium lines from 5.32. Vigil prunes rot and adds a proven line each SMW. Parents read it aloud before a child can read. School does not replace the house. The child improves the packet and hands it on. Names of schools are not statute. The drill is. A creed that wants the Baton as a catechism fails 5.30.
 
 **LEX 1AV:** The Baton is short, signed, and alive.
 **LEX 2AV:** A child receives the gem early. He does not re-dig the mine.
@@ -2917,7 +2914,7 @@ Status: **LOCKED**
 
 **PACTUM:** Take the Roman joint; leave the slave and the household killing.
 
-**CODEX:** Taken from Roman law: a contract binds the parties who made it; good faith is the default in trade; no crime and no penalty without a prior written room; hear the other side; name the actor and the act; the same debt is not collected twice; harm done without right is owed; written law outranks mood. Taken from the Roman reading of the stage: a man who sells the display of his person does not thereby mint civic gravitas; spectacle is not office, not testimony-weight, and not a meter. Refused: a slave as a thing; a father who kills his child as right; infamy as a caste that strips the person from Axiom 1 or Axiom 3; law that lives only in a priest's mouth. Scaena is 5.36.
+**CODEX:** Scaena is 5.36.
 
 **LEX 1AX:** No crime without a prior room.
 **LEX 2AX:** No man judges his own case.
@@ -3314,9 +3311,7 @@ Status: **LOCKED**
 
 **PACTUM:** Keep the joint that feeds the plant. Leave the sermon that fed a court.
 
-**CODEX:** Kept: household as first school; duty to work; family as the transmission unit; citizen first at the gate; false naturalization stripped; merit in office; no dual loyalty; subsidiarity; militia; local purse; people-seal on Root; speech, press, assembly, petition; personal arms; no forced billet; particular search; due course before life, liberty, or title; one act, one sealed verdict; no compelled confession; confront the accuser; speedy public file; just compensation after a verified taking; powers not etched remain with the house; inviolable domicile and letters; parent duty to raise and teach; inheritance; land at the gate is not a foreign default; petition against an office; the kernel cannot be amended out of existence; no taking without judgment of peers; produce the body; the public file is digital and readable; defense is a duty; the ledger is open; title is fact; a party that exists to wreck the order does not sit Franchise; written law over mood; the magistrate bound; mixed triad; colony as seed; foedus before needless sack; the stage without gravitas.
-
-Refused: disarmament as holiness; jail without EEP; neutrality that forbids defense; birth on soil as Franchise; a court that rewrites Root by mood; equal-protection as a demand that stocks score alike; cruel-and-unusual as a ban on Neutralization after EEP; a living-standard claim on the mint; defamation-of-the-nation as a speech crime; a union title that writes Root; a restriction clause that swallows the right it names; a court that invents rights against meters; dignity as a speech muzzle; the slave as a thing; the emperor as god; tribute-empire as piety; sack when a contract would hold.
+**CODEX:** The following joints stand: household as first school; duty to work; family as the transmission unit; citizen first at the gate; false naturalization stripped; merit in office; no dual loyalty; subsidiarity; militia; local purse; people-seal on Root; speech, press, assembly, petition; personal arms; no forced billet; particular search; due course before life, liberty, or title; one act, one sealed verdict; no compelled confession; confront the accuser; speedy public file; just compensation after a verified taking; powers not etched remain with the house; inviolable domicile and letters; parent duty to raise and teach; inheritance; land at the gate is not a foreign default; petition against an office; the kernel cannot be amended out of existence; no taking without judgment of peers; produce the body; the public file is digital and readable; defense is a duty; the ledger is open; title is fact; a party that exists to wreck the order does not sit Franchise; written law over mood; the magistrate bound; mixed triad; colony as seed; foedus before needless sack; the stage without gravitas.
 
 Foreign text never writes this file.
 

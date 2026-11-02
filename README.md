@@ -1,5 +1,5 @@
 # Sapiens Novus — Constitutio Intermundia
-## Public Release v1.0
+## Public Release v1.01
 
 **A machine of survival for human flourishing under sensor-driven law.**
 
@@ -7,15 +7,13 @@ This is a constitution and operating consciousness for decentralized human settl
 
 Full text: [`sapiens-novus.md`](sapiens-novus.md).
 
-*Refined public release of internal v1.26.*
-
 ### How to read
 Pactum explains. Codex governs. Lex executes. Words are commands. Meters outrank speech.
 
 ### Contents
 
 - [0. PRAEFATIO](sapiens-novus.md#0-praefatio) — What this instrument is.
-- [0.R HERITAS](sapiens-novus.md#0r-heritas) — Method taken, costume refused.
+- [0.R HERITAS](sapiens-novus.md#0r-heritas) — Inherited civil method.
 - [0. ALPHA](sapiens-novus.md#0-alpha) — Biological inception.
 - [A. Ordo](sapiens-novus.md#a-ordo) — Department map.
 - [B. Glossary](sapiens-novus.md#b-glossary) — Locked definitions.
