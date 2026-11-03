@@ -320,7 +320,7 @@ def main() -> int:
     except ImportError:
         report.append("markdown_render SKIPPED (package missing)")
 
-    if lines[1] != "**Draft Proposal v1.1**":
+    if lines[1] != "**Public Release v1.1**":
         report.append(f"VERSION {lines[1]!r}")
         fail += 1
     else:

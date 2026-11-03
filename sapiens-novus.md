@@ -1,5 +1,5 @@
 **Sapiens Novus — Constitutio Intermundia**
-**Draft Proposal v1.1**
+**Public Release v1.1**
 
 A constitution and operating system for decentralized human settlements. It ranks binary biological reality, measured energy surplus, individual responsibility, and sensor-driven outcomes above ideology and above central control. It is built to heal itself, to fork, and to scale from camps on Earth to wells beyond it.
 
