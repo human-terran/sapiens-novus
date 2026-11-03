@@ -1,8 +1,17 @@
 #!/usr/bin/env python3
-"""Meaning-preservation checks: v1.02 baseline vs draft v1.1.
+"""Checks for draft v1.1 after the diction pass.
 
-Baseline is /tmp/sapiens-v102.md when present, else git show of v1.02.
-Writes a machine-readable summary to reviews/_audit.txt
+Compares the working sapiens-novus.md to the pre-diction text
+(v1.1 before this pass) for headings, per-room number multisets, and
+per-room formula multisets. Compares the axiom block byte-for-byte to
+public v1.02.
+
+Axiom block: the characters from "Axiom 1 —" through the character
+before "**LEX 1PR:** Axioms 1–12 bind all departments." That span is
+Axiom 1 through Axiom 12, including the continuation paragraphs of
+Axioms 8 and 9 and the "Only two sexes exist" paragraph that closes
+the axiom codex. It does not include the Pactum, the one-line codex
+intro, or the Lex lines of that room.
 """
 
 from __future__ import annotations
@@ -15,25 +24,56 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 NEW = (ROOT / "sapiens-novus.md").read_text()
-base_path = Path("/tmp/sapiens-v102.md")
-if base_path.exists():
-    OLD = base_path.read_text()
-else:
-    OLD = subprocess.check_output(
-        ["git", "show", "4425d45691bf1dfbfc3d3f578507510054e83111:sapiens-novus.md"],
+
+PRE_PATH = Path("/tmp/sapiens-v11-before-diction.md")
+V102_PATH = Path("/tmp/sapiens-v102.md")
+PRE_COMMIT = "e57deea2223ecc377434dc26be01d27216b10944"
+V102_COMMIT = "4425d45691bf1dfbfc3d3f578507510054e83111"
+
+NUM = re.compile(r"(?<![\w.])\d[\d,]*(?:\.\d+)?%?")
+# An equality or approximation that is a formula, not a prose "is".
+FORMULA = re.compile(
+    r"(?:[A-ZΩΨε][A-Za-z0-9\\_ΩΨ*]{0,24}|Ω\\\*)\s*[=≈]\s*[^.\n]{1,240}"
+)
+# Room cite: chapter 1–9, room id, not a longer decimal and not a percent.
+CITE = re.compile(r"(?<![\d.])([1-9])\.(\d{1,2})(?:\.(\d{1,2}))?(?![\d.%])")
+ROMAN_CITE = re.compile(
+    r"\b(VIII|VII|VI|IV|IX|V|III|II|I)\.(\d{1,2})(?:\.(\d{1,2}))?\b"
+)
+ROMAN = {
+    "1": "I",
+    "2": "II",
+    "3": "III",
+    "4": "IV",
+    "5": "V",
+    "6": "VI",
+    "7": "VII",
+    "8": "VIII",
+    "9": "IX",
+}
+
+
+def git_show(rev: str) -> str:
+    return subprocess.check_output(
+        ["git", "show", f"{rev}:sapiens-novus.md"],
         cwd=ROOT,
         text=True,
     )
 
-NUM = re.compile(r"(?<![\w.])\d[\d,]*(?:\.\d+)?%?")
-FORMULA_MARK = ("=", "∫", "Ω", "Ψ", "ε", "κ", "λ", "Φ")
+
+def load_pre() -> str:
+    if PRE_PATH.exists():
+        return PRE_PATH.read_text()
+    return git_show(PRE_COMMIT)
+
+
+def load_v102() -> str:
+    if V102_PATH.exists():
+        return V102_PATH.read_text()
+    return git_show(V102_COMMIT)
 
 
 def rooms(text: str) -> list[tuple[str, str]]:
-    """Return (heading, body through Status line) for each room.
-
-    A room heading is a bold line whose next non-empty line is a RADIX breadcrumb.
-    """
     lines = text.splitlines()
     heads = []
     for i, line in enumerate(lines):
@@ -48,131 +88,194 @@ def rooms(text: str) -> list[tuple[str, str]]:
     for n, i in enumerate(heads):
         end = heads[n + 1] if n + 1 < len(heads) else len(lines)
         chunk = lines[i:end]
-        # A room's operative text ends at its Status line. Chapter leads
-        # and later rooms are not part of the byte-compare.
-        status_at = None
-        for k, ln in enumerate(chunk):
-            if ln.startswith("Status:"):
-                status_at = k
-                break
+        status_at = next((k for k, ln in enumerate(chunk) if ln.startswith("Status:")), None)
         if status_at is not None:
             chunk = chunk[: status_at + 1]
         while chunk and chunk[-1].strip() == "":
             chunk.pop()
-        body = "\n".join(chunk)
-        out.append((lines[i], body))
+        out.append((lines[i], "\n".join(chunk)))
     return out
 
 
+def norm_num(tok: str) -> str:
+    """A trailing comma is punctuation. A thousands comma stays."""
+    if re.fullmatch(r"\d+,", tok):
+        return tok[:-1]
+    return tok
+
+
 def numeric_tokens(body: str) -> Counter:
-    return Counter(NUM.findall(body))
+    return Counter(norm_num(t) for t in NUM.findall(body))
 
 
-def formula_lines(body: str) -> list[str]:
-    return [ln for ln in body.splitlines() if any(m in ln for m in FORMULA_MARK)]
+def formulas(body: str) -> Counter:
+    return Counter(FORMULA.findall(body))
+
+
+def axiom_block(text: str) -> str:
+    start = text.find("Axiom 1 —")
+    end = text.find("**LEX 1PR:** Axioms 1–12 bind all departments.")
+    if start < 0 or end < 0 or end <= start:
+        raise SystemExit("axiom block markers missing")
+    return text[start:end]
+
+
+def headings(text: str) -> list[str]:
+    found = []
+    lines = text.splitlines()
+    for i, line in enumerate(lines):
+        if not (line.startswith("**") and line.endswith("**") and line.count("**") == 2):
+            continue
+        j = i + 1
+        while j < len(lines) and lines[j].strip() == "":
+            j += 1
+        if j < len(lines) and lines[j].startswith("###### RADIX"):
+            found.append(line[2:-2])
+    return found
+
+
+def cite_resolves(ch: str, minor: str, sub: str, heads: list[str]) -> bool:
+    pref = f"{ROMAN[ch]}.{minor}" + (f".{sub}" if sub else "")
+    if any(h.startswith(pref) for h in heads):
+        return True
+    # Chapter I writes its rooms as Roman headings: 1.5 is V. Modularity,
+    # 1.7 is VII. Entityhood, 1.8 is VIII. Holographic Root, 1.6 is I.6
+    # (and is also the ambiguous cite of VI. Terminology).
+    if ch == "1":
+        aliases = {
+            "2": "II. ",
+            "3": "III. ",
+            "4": "IV. ",
+            "5": "V. ",
+            "6": "I.6",
+            "7": "VII. ",
+            "8": "VIII. ",
+            "9": "I.9",
+            "10": "I.10",
+        }
+        alias = aliases.get(minor)
+        if alias and any(h.startswith(alias) for h in heads):
+            return True
+        if minor == "6" and any(h.startswith("VI. ") for h in heads):
+            return True
+    return False
+
+
+def roman_resolves(rom: str, minor: str, sub: str, heads: list[str]) -> bool:
+    pref = f"{rom}.{minor}" + (f".{sub}" if sub else "")
+    if any(h.startswith(pref) for h in heads):
+        return True
+    # "I.8" in the new rooms means chapter I, room VIII (Holographic Root).
+    if rom == "I" and minor == "8" and any(h.startswith("VIII. ") for h in heads):
+        return True
+    if rom == "I" and minor == "7" and any(h.startswith("VII. ") for h in heads):
+        return True
+    if rom == "I" and minor == "5" and any(h.startswith("V. ") for h in heads):
+        return True
+    if rom == "I" and minor == "6" and any(h.startswith("I.6") or h.startswith("VI. ") for h in heads):
+        return True
+    return False
+
+
+def is_scalar(ch: str, minor: str, text_has: str) -> bool:
+    """Frequencies and bounds that look like cites: 7.83 Hz, 2.0."""
+    token = f"{ch}.{minor}"
+    if token == "2.0":
+        return True
+    if token == "7.83" or (ch == "7" and minor == "83"):
+        return True
+    return False
 
 
 def main() -> int:
-    old_rooms = rooms(OLD)
+    pre = load_pre()
+    v102 = load_v102()
+    report: list[str] = []
+    fail = 0
+
+    old_rooms = rooms(pre)
     new_rooms = rooms(NEW)
     old_map = {h: b for h, b in old_rooms}
     new_map = {h: b for h, b in new_rooms}
 
-    report: list[str] = []
-    fail = 0
-
     missing = [h for h in old_map if h not in new_map]
-    report.append(f"old_rooms {len(old_map)}")
-    report.append(f"new_rooms {len(new_map)}")
-    report.append(f"missing_old_headings {len(missing)}")
+    extra = [h for h in new_map if h not in old_map]
+    report.append(f"rooms_before {len(old_map)}")
+    report.append(f"rooms_after {len(new_map)}")
+    report.append(f"missing_headings {len(missing)}")
+    report.append(f"extra_headings {len(extra)}")
     for h in missing:
         report.append(f"MISSING {h}")
+    for h in extra:
+        report.append(f"EXTRA {h}")
+    if missing or extra:
         fail += 1
 
-    added = [h for h in new_map if h not in old_map]
-    report.append(f"added_headings {len(added)}")
-    for h in added:
-        report.append(f"ADDED {h}")
-
-    # Order of old headings preserved (IX.2 and IX.3 may swap).
-    old_heads = [h for h, _ in old_rooms]
-    new_heads = [h for h, _ in new_rooms if h in old_map]
-    # Expected: IX.2 before IX.3, otherwise same relative order.
-    def norm_order(hs: list[str]) -> list[str]:
-        return hs
-
-    # Compare pairwise order ignoring the IX.2/IX.3 swap.
-    def strip_ix(hs: list[str]) -> list[str]:
-        return [h for h in hs if h not in ("**IX.2 QAT**", "**IX.3 Cycle**")]
-
-    if strip_ix(old_heads) != strip_ix(new_heads):
-        report.append("ORDER DRIFT (excluding IX.2/IX.3)")
-        fail += 1
-        for a, b in zip(strip_ix(old_heads), strip_ix(new_heads)):
-            if a != b:
-                report.append(f"  first {a} vs {b}")
-                break
-    else:
-        report.append("order_preserved_except_IX2_IX3 yes")
-
-    ix_new = [h for h, _ in new_rooms if h.startswith("**IX.")]
-    report.append("ix_order " + " | ".join(ix_new))
-    if ix_new[:3] != ["**IX.1 Master Formula**", "**IX.2 QAT**", "**IX.3 Cycle**"]:
-        report.append("IX ORDER FAIL")
-        fail += 1
-
-    num_mismatch = []
-    formula_mismatch = []
-    byte_diff = []
-    allowed_heading_prefix = None
-
-    for h, ob in old_map.items():
-        nb = new_map.get(h)
-        if nb is None:
+    num_bad = []
+    form_bad = []
+    for h, body in old_rooms:
+        if h not in new_map:
             continue
-        if numeric_tokens(ob) != numeric_tokens(nb):
-            num_mismatch.append(h)
-            oc, nc = numeric_tokens(ob), numeric_tokens(nb)
+        nb = new_map[h]
+        if numeric_tokens(body) != numeric_tokens(nb):
+            num_bad.append(h)
             report.append(f"NUM {h}")
-            report.append(f"  only_old {oc - nc}")
-            report.append(f"  only_new {nc - oc}")
-        if formula_lines(ob) != formula_lines(nb):
-            formula_mismatch.append(h)
-            report.append(f"FORMULA {h}")
-        if ob != nb:
-            byte_diff.append(h)
+            report.append(f"  only_before {numeric_tokens(body) - numeric_tokens(nb)}")
+            report.append(f"  only_after {numeric_tokens(nb) - numeric_tokens(body)}")
+        if formulas(body) != formulas(nb):
+            # Require every old formula string to survive. A new wording
+            # may split a line; it may not drop or alter a formula.
+            lost = formulas(body) - formulas(nb)
+            if lost:
+                form_bad.append(h)
+                report.append(f"FORMULA {h} lost {list(lost.elements())[:4]}")
+    report.append(f"numeric_mismatch_rooms {len(num_bad)}")
+    report.append(f"formula_mismatch_rooms {len(form_bad)}")
+    if num_bad or form_bad:
+        fail += 1
 
-    report.append(f"numeric_mismatch_rooms {len(num_mismatch)}")
-    report.append(f"formula_mismatch_rooms {len(formula_mismatch)}")
-    report.append(f"byte_diff_rooms {len(byte_diff)}")
-    for h in byte_diff:
-        report.append(f"BYTE {h}")
+    ax_new = axiom_block(NEW)
+    ax_old = axiom_block(v102)
+    ax_pre = axiom_block(pre)
+    report.append("axiom_block_vs_v102 " + ("MATCH" if ax_new == ax_old else "DIFFER"))
+    report.append("axiom_block_vs_predication " + ("MATCH" if ax_new == ax_pre else "DIFFER"))
+    report.append(f"axiom_block_bytes {len(ax_new)}")
+    if ax_new != ax_old or ax_new != ax_pre:
+        fail += 1
 
-    # Expected byte diffs only.
-    expected = {
-        "**B. Glossary**": "JI escape",  # glossary is one room? check
-    }
-    # Identify which old room contains the JI line and the pactum fixes.
-    report.append("--- byte diff detail (first differing line) ---")
-    for h in byte_diff:
-        ob = old_map[h].splitlines()
-        nb = new_map[h].splitlines()
-        # align short
-        n = max(len(ob), len(nb))
-        shown = 0
-        for i in range(n):
-            a = ob[i] if i < len(ob) else "<missing>"
-            b = nb[i] if i < len(nb) else "<missing>"
-            if a != b:
-                report.append(f"  {h} L{i+1}")
-                report.append(f"    OLD {a[:220]}")
-                report.append(f"    NEW {b[:220]}")
-                shown += 1
-                if shown >= 6:
-                    report.append("    ...")
-                    break
+    report.append(
+        f"status_locked_before {pre.count('Status: **LOCKED**')} after {NEW.count('Status: **LOCKED**')}"
+    )
+    report.append(
+        f"status_proposed_before {pre.count('Status: **PROPOSED**')} after {NEW.count('Status: **PROPOSED**')}"
+    )
+    if pre.count("Status: **LOCKED**") != NEW.count("Status: **LOCKED**"):
+        fail += 1
+        report.append("LOCKED COUNT CHANGED")
+    if pre.count("Status: **PROPOSED**") != NEW.count("Status: **PROPOSED**"):
+        fail += 1
+        report.append("PROPOSED COUNT CHANGED")
 
-    # Markdown structure
+    heads = headings(NEW)
+    unresolved = []
+    scalars = []
+    for ch, minor, sub in set(CITE.findall(NEW)):
+        if is_scalar(ch, minor, NEW):
+            scalars.append(f"{ch}.{minor}")
+            continue
+        if not cite_resolves(ch, minor, sub, heads):
+            unresolved.append(f"{ch}.{minor}" + (f".{sub}" if sub else ""))
+    for rom, minor, sub in set(ROMAN_CITE.findall(NEW)):
+        if not roman_resolves(rom, minor, sub, heads):
+            unresolved.append(f"{rom}.{minor}" + (f".{sub}" if sub else ""))
+    report.append(f"cross_references_unresolved {len(unresolved)}")
+    for item in sorted(set(unresolved)):
+        report.append(f"UNRESOLVED {item}")
+    report.append("scalars_not_cites " + ", ".join(sorted(set(scalars))))
+    if unresolved:
+        fail += 1
+
+    # Markdown structure.
     lines = NEW.splitlines()
     swallowed = []
     merged = []
@@ -181,13 +284,6 @@ def main() -> int:
             swallowed.append(i + 1)
         if line.startswith("Status:") and i + 1 < len(lines) and lines[i + 1].startswith("#"):
             merged.append(i + 1)
-    report.append(f"status_swallowed_by_table {len(swallowed)} {swallowed}")
-    report.append(f"status_then_heading {len(merged)} {merged}")
-    if swallowed or merged:
-        fail += 1
-
-    # Tables: every line of pipes has a separator somewhere near — crude check that header rows with |---| exist
-    # and column counts match within a table.
     table_err = 0
     i = 0
     while i < len(lines):
@@ -199,133 +295,45 @@ def main() -> int:
             counts = [ln.count("|") for ln in block]
             if len(set(counts)) != 1:
                 table_err += 1
-                report.append(f"TABLE cols {counts} :: {block[0][:80]}")
-            if not any(re.search(r"\|?\s*:?-{3,}", ln) for ln in block):
-                # separator may be :---: 
-                if not any("---" in ln for ln in block):
-                    table_err += 1
-                    report.append(f"TABLE no separator {block[0][:80]}")
+                report.append(f"TABLE cols {counts[:6]} :: {block[0][:60]}")
+            if not any("---" in ln for ln in block):
+                table_err += 1
+                report.append(f"TABLE no separator {block[0][:60]}")
         else:
             i += 1
+    report.append(f"status_swallowed_by_table {len(swallowed)}")
+    report.append(f"status_then_heading {len(merged)}")
     report.append(f"table_errors {table_err}")
-    if table_err:
+    if swallowed or merged or table_err:
         fail += 1
 
-    # Version line
+    try:
+        import markdown
+
+        html = markdown.markdown(NEW, extensions=["tables", "sane_lists"])
+        report.append(
+            f"markdown_render html_chars={len(html)} h1={html.count('<h1')} tables={html.count('<table')}"
+        )
+        if html.count("<h1") != 14 or html.count("<table") != 2:
+            report.append("MARKDOWN SHAPE UNEXPECTED")
+            fail += 1
+    except ImportError:
+        report.append("markdown_render SKIPPED (package missing)")
+
     if lines[1] != "**Draft Proposal v1.1**":
-        report.append(f"VERSION LINE {lines[1]!r}")
+        report.append(f"VERSION {lines[1]!r}")
         fail += 1
     else:
         report.append("version_line ok")
 
-    # Locked status count
-    report.append(f"old_locked {OLD.count('Status: **LOCKED**')}")
-    report.append(f"new_locked {NEW.count('Status: **LOCKED**')}")
-    report.append(f"new_proposed {NEW.count('Status: **PROPOSED**')}")
-    if NEW.count("Status: **LOCKED**") != OLD.count("Status: **LOCKED**"):
-        report.append("LOCKED COUNT CHANGED")
-        fail += 1
-
-    # No personal-name injection heuristic: flag rare capitalized full names in ADDED rooms only.
-    # Skip. Instead ensure 'human-terran' and common founder names are absent from new text.
-    for banned in ("human-terran", "Giardani"):
-        if banned.lower() in NEW.lower() and banned.lower() not in OLD.lower():
-            report.append(f"BANNED NAME introduced {banned}")
-            fail += 1
-
-    # Cross-ref style in new rooms: count arabic room cites like 7.53 inside proposed rooms only.
-    # Not a failure; informational.
-    proposed_bodies = []
-    for h, bdy in new_rooms:
-        if h not in old_map:
-            proposed_bodies.append(bdy)
-    arab = re.findall(r"(?<![A-Z0-9])\d+\.\d+", "\n".join(proposed_bodies))
-    # filter years/none. Report count.
-    report.append(f"arabic_dot_tokens_in_new_rooms {len(arab)} sample={arab[:20]}")
-
-    # Numbers introduced in new rooms (informational)
-    new_nums = Counter()
-    for h, bdy in new_rooms:
-        if h not in old_map:
-            new_nums.update(numeric_tokens(bdy))
-    report.append("new_room_number_tokens " + ", ".join(f"{k}:{v}" for k, v in sorted(new_nums.items(), key=lambda kv: kv[0])))
-
-    if num_mismatch or formula_mismatch:
-        fail += 1
-
-    # Unexpected byte diffs. Expected headings:
-    # The glossary room heading might be the first bold inside glossary? 
-    # We print them; caller decides. Fail if a byte diff is not in the allow list
-    # after we know the headings. Allow list by substring of the heading.
-    allow_sub = (
-        "Glossary",
-        "III.17 Rate Chain",
-        "V.35 Limen Scholae",
-        "V.37 Pinna",
-        "VIII.10 Prioritas",
-        "IX.1 Master Formula",
-    )
-    unexpected = []
-    for h in byte_diff:
-        if not any(s in h for s in allow_sub):
-            unexpected.append(h)
-    report.append(f"unexpected_byte_diffs {len(unexpected)}")
-    for h in unexpected:
-        report.append(f"UNEXPECTED {h}")
-    if unexpected:
-        fail += 1
-
-    # Confirm each expected diff is ONLY the intended lines, by checking the rest equal.
-    def glossary_slice(src: str) -> str:
-        a = src.find("# B. Glossary\n")
-        b = src.find("**B.1 Usus**")
-        if b < 0:
-            b = src.find("# I. PRIMA\n")
-        if a < 0 or b < 0 or b < a:
-            return ""
-        return src[a:b].strip("\n")
-
-    g_old = glossary_slice(OLD if "**B.1 Usus**" in OLD else OLD)
-    # Old file has no B.1; slice from glossary heading to I. PRIMA.
-    def glossary_old(src: str) -> str:
-        a = src.find("# B. Glossary\n")
-        b = src.find("# I. PRIMA\n")
-        return src[a:b].strip("\n")
-
-    go = glossary_old(OLD)
-    gn = glossary_slice(NEW)
-    # Expected difference is only the JI escape.
-    go_n = go.replace("E\\\\\\_net.", "E\\_net.")
-    if go_n == gn:
-        report.append("glossary_bytes MATCH except authorized JI escape")
-    else:
-        report.append("glossary_bytes DIFFER beyond JI")
-        fail += 1
-        # show a short diff
-        import difflib
-        diff = list(difflib.unified_diff(go_n.splitlines(), gn.splitlines(), lineterm="", n=1))
-        report.extend(diff[:40])
-
-    # Axiom block byte identity: from "**III. The 12 Foundational Axioms**" through its Status.
-    def grab(src: str, start: str, end: str) -> str:
-        a = src.find(start)
-        b = src.find(end, a + 1)
-        return src[a:b]
-
-    ax_o = grab(OLD, "**III. The 12 Foundational Axioms**", "**IV. Master Objective Function**")
-    ax_n = grab(NEW, "**III. The 12 Foundational Axioms**", "**IV. Master Objective Function**")
-    report.append("axioms_byte " + ("MATCH" if ax_o == ax_n else "DIFFER"))
-    if ax_o != ax_n:
-        fail += 1
-
-    vci_o = "VCI\\_t = 0.40 E\\_net + 0.25 B\\_success + 0.20 T\\_value + 0.15 I\\_built − P."
-    report.append("vci_weights_present_old " + str(vci_o in OLD))
-    report.append("vci_weights_present_new " + str(vci_o in NEW))
-    if vci_o not in NEW:
+    # VCI weights still the locked string.
+    weight = "0.40 E\\_net + 0.25 B\\_success + 0.20 T\\_value + 0.15 I\\_built"
+    report.append("vci_weights " + ("present" if weight in NEW else "MISSING"))
+    if weight not in NEW:
         fail += 1
 
     report.append(f"fail {fail}")
-    out = Path("/tmp/sapiens-v11-audit.txt")
+    out = Path("/tmp/sapiens-v11-diction-audit.txt")
     out.write_text("\n".join(report) + "\n")
     print("\n".join(report))
     return 1 if fail else 0

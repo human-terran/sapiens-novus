@@ -7,7 +7,8 @@ Public versions of *Sapiens Novus — Constitutio Intermundia*. The text names n
 Draft proposal. Not a release. Not merged. The owner publishes, or does not, and may choose another number.
 
 - Version line set to **Draft Proposal v1.1**.
-- Praefatio prose rewritten for clarity. Locked rooms were not reworded.
+- Diction pass across every chapter, locked rooms included, after the owner answered Q1. The twelve axioms, and the paragraph that begins "Only two sexes exist," are byte-identical to v1.02. Numbers, weights, formulas, headings, and status lines are unchanged. Room-by-room notes are in `reviews/v1.1-meaning-map.md`.
+- B.1 Usus was not merged into the Glossary. The Glossary table of terms is unchanged. The sentences around that table were clarified.
 - Glossary **JI**: `E\\\_net` corrected to `E\_net`, matching the VCI formula.
 - The PACTUM lines that began "Closes the missing joint..." in III.17 Rate Chain, V.35 Limen Scholae, and V.37 Pinna are now operative sentences. Codex and Lex in those rooms are unchanged.
 - VIII.10 Prioritas: the parenthetical is now a sentence. It still distinguishes local-claim Prioritas from the P0–P3 grade in VII.48.
@@ -17,7 +18,7 @@ Draft proposal. Not a release. Not merged. The owner publishes, or does not, and
 
 ### Known issues in 1.02, and their state in this draft
 
-The three issues listed under 1.02 below are addressed in this draft, as the bullets above say. The history is kept. Other audit notes (duplicate 1.6 numbering, two rooms named Horologium, Nefas lines VII and XII, "eight departments," symbol names in I.IV and IX.1, the verb "uncompromise") sit inside locked text and are recorded, not rewritten. Open questions are in the pentest report.
+The three issues listed under 1.02 below are addressed in this draft, as the bullets above say. The history is kept. Other audit notes (duplicate 1.6 numbering, two rooms named Horologium, Nefas lines VII and XII, "eight departments," symbol names in I.IV and IX.1, the verb "uncompromise") were not structurally changed. The diction pass clarified sentences around them and left those collisions in place. Open questions are in the pentest report.
 
 ## 1.02
 
