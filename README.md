@@ -1,4 +1,7 @@
 # Sapiens Novus — Constitutio Intermundia
+
+Full text: [sapiens-novus.md](sapiens-novus.md). All released versions: [versions/](versions/).
+
 ## Public Release v1.11
 
 **A machine of survival for human flourishing under sensor-driven law.**
