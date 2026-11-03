@@ -1,5 +1,5 @@
 # Sapiens Novus — Constitutio Intermundia
-## Public Release v1.02
+## Public Release v1.1
 
 **A machine of survival for human flourishing under sensor-driven law.**
 
