@@ -2,6 +2,13 @@
 
 Public versions of *Sapiens Novus — Constitutio Intermundia*. The text names no calendar date. Headings here follow the version in the file.
 
+## 1.11 — 2026-11-04
+
+- Version line set to **Public Release v1.11**. `date-released` in `CITATION.cff` is 2026-11-04.
+- VII.58 Patronus no longer treats a shared funder as shared custody. Under VII.53, custody is the holder of a seal or a key. The room discloses payers and writes that disclosure on the open ledger. It adds no signing bar and no recusal.
+- B.1 Usus records that the eight departments in I. Carta are deliberate: Prima is the root, and eight departments stand under it. I. Carta is unchanged.
+- VII.61 Limites is unchanged. QAT stays unexpanded. Grace Period stays N+1, with no day-count. The other open questions keep the readings already in the v1.1 review. Those decisions are marked on `reviews/v1.1-pentest-report.md`.
+
 ## 1.1 — 2026-11-04
 
 Public release.

@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
 """Checks for draft v1.1 after the diction pass.
 
-Compares the working sapiens-novus.md to the pre-diction text
-(v1.1 before this pass) for headings, per-room number multisets, and
-per-room formula multisets. Compares the axiom block byte-for-byte to
-public v1.02.
+Compares the working sapiens-novus.md to public v1.1 (merge cede880)
+for headings, per-room number multisets, and per-room formula multisets.
+Compares the axiom block byte-for-byte to public v1.02.
 
 Axiom block: the characters from "Axiom 1 —" through the character
 before "**LEX 1PR:** Axioms 1–12 bind all departments." That span is
@@ -25,9 +24,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 NEW = (ROOT / "sapiens-novus.md").read_text()
 
-PRE_PATH = Path("/tmp/sapiens-v11-before-diction.md")
 V102_PATH = Path("/tmp/sapiens-v102.md")
-PRE_COMMIT = "e57deea2223ecc377434dc26be01d27216b10944"
+PRE_COMMIT = "cede880a20828f5e58135a8a9a18d422599895ca"
 V102_COMMIT = "4425d45691bf1dfbfc3d3f578507510054e83111"
 
 NUM = re.compile(r"(?<![\w.])\d[\d,]*(?:\.\d+)?%?")
@@ -36,7 +34,7 @@ FORMULA = re.compile(
     r"(?:[A-ZΩΨε][A-Za-z0-9\\_ΩΨ*]{0,24}|Ω\\\*)\s*[=≈]\s*[^.\n]{1,240}"
 )
 # Room cite: chapter 1–9, room id, not a longer decimal and not a percent.
-CITE = re.compile(r"(?<![\d.])([1-9])\.(\d{1,2})(?:\.(\d{1,2}))?(?![\d.%])")
+CITE = re.compile(r"(?<![\w.])([1-9])\.(\d{1,2})(?:\.(\d{1,2}))?(?![\d.%])")
 ROMAN_CITE = re.compile(
     r"\b(VIII|VII|VI|IV|IX|V|III|II|I)\.(\d{1,2})(?:\.(\d{1,2}))?\b"
 )
@@ -62,8 +60,6 @@ def git_show(rev: str) -> str:
 
 
 def load_pre() -> str:
-    if PRE_PATH.exists():
-        return PRE_PATH.read_text()
     return git_show(PRE_COMMIT)
 
 
@@ -320,7 +316,7 @@ def main() -> int:
     except ImportError:
         report.append("markdown_render SKIPPED (package missing)")
 
-    if lines[1] != "**Public Release v1.1**":
+    if lines[1] != "**Public Release v1.11**":
         report.append(f"VERSION {lines[1]!r}")
         fail += 1
     else:
