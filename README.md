@@ -1,5 +1,7 @@
 # Sapiens Novus — Constitutio Intermundia
-## Public Release v1.02
+## Draft Proposal v1.1
+
+This branch is a proposal for the owner's review. It is not a release. The published text remains v1.02 until the owner says otherwise.
 
 **A machine of survival for human flourishing under sensor-driven law.**
 
