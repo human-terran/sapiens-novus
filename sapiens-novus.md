@@ -1,5 +1,5 @@
 **Sapiens Novus — Constitutio Intermundia**
-**Public Release v1.1**
+**Public Release v1.11**
 
 A constitution and operating system for decentralized human settlements. It ranks binary biological reality, measured energy surplus, individual responsibility, and sensor-driven outcomes above ideology and above central control. It is built to heal itself, to fork, and to scale from camps on Earth to wells beyond it.
 
@@ -331,6 +331,8 @@ I.IV writes the base integral with E\_ref, Ψ(B), A\_ART, entropy, and parasitis
 VII.49 uses the verb "uncompromise" for the step after isolation and before replacement: restore the leg from the last clean hash, then replace it. This draft does not change that verb.
 
 Colonia, EADIP, Semantic Trojan, and Silicon Layer keep the meanings in the Glossary. Later rooms in this draft use them, so that a defined term is not an empty cell.
+
+I. Carta's count of eight departments is deliberate. Prima is the root, and eight departments stand under it, from Corpus through Omega, which is II through IX. The Prima tag still names the span from I PRIMA through IX OMEGA. This sentence records that reading. It does not amend I. Carta.
 
 **LEX 1GL:** A term recorded here from a room already in the file is not undefined.
 **LEX 2GL:** If this room and a Glossary cell differ, the cell wins.
@@ -3492,12 +3494,14 @@ Status: **PROPOSED**
 **VII.58 Patronus**
 ###### RADIX \> VII. ARX \> VII.58 Patronus
 
-**PACTUM:** Two external seats fed by one purse are not two seats.
+**PACTUM:** A purse is not a key. Funding is disclosed and written down. It is not custody, and it is not a bar on a signature.
 
-**CODEX:** VII.53 already voids one entity in two external seats, and it already counts custody. An external seat publishes its payers each SMW. A payer who funds two external seats, or who supplies the majority of the published budget of two seats, is one custody for those two seats. They do not both sign the same gate. The seats are not abolished. They are not independent of each other on that gate. A seat that hides its payers does not sign until it publishes. This room does not amend the independence checklist. It applies the custody prong to the purse.
+**CODEX:** Under VII.53, custody is the holder of a seal or a key, or the operator who holds that custody. A payer is not that holder. A person who funds two external seats is not, by that funding, one custody, and is not, by that funding, one entity in two seats. This room does not amend the independence checklist. It does not add a bar on who may sign, and it does not add a recusal.
 
-**LEX 1AX:** Payers of external seats are published each SMW.
-**LEX 2AX:** One majority purse does not sign twice on the same gate.
+Each external seat discloses its payers each SMW. The disclosure is written on the open ledger VII.31 already keeps, beside office pay when the Node is the payer, and as the declared list when the payer is outside. A reader of that ledger can see a concentration of funding. Review of the line is the audit the file already has, including VII.20 and VII.22. Recusal remains only where a room already requires it, including a judge of his own case under VII.51 and an arbitrator paid by a party to that case under VIII.31. A missing disclosure is a blank on that line. It is not a void signature. Hidden public spend of the Node's own joules remains VII.31, and nothing in this room widens that charge to an outside purse.
+
+**LEX 1AX:** Payers of external seats are disclosed each SMW and written on the open ledger.
+**LEX 2AX:** A purse is not custody. This room does not bar a signature and does not add a recusal.
 Status: **PROPOSED**
 
 **VII.59 Sortitio**
