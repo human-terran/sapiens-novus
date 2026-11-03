@@ -5,27 +5,26 @@ Public versions of *Sapiens Novus — Constitutio Intermundia*. The text names n
 ## 1.11 — 2026-11-04
 
 - Version line set to **Public Release v1.11**. `date-released` in `CITATION.cff` is 2026-11-04.
-- VII.58 Patronus no longer treats a shared funder as shared custody. Under VII.53, custody is the holder of a seal or a key. The room discloses payers and writes that disclosure on the open ledger. It adds no signing bar and no recusal.
+- VII.58 Patronus records the payers of an external seat on the open ledger. A payer is not custody. The room does not bar a signature and does not add a recusal.
 - B.1 Usus records that the eight departments in I. Carta are deliberate: Prima is the root, and eight departments stand under it. I. Carta is unchanged.
-- VII.61 Limites is unchanged. QAT stays unexpanded. Grace Period stays N+1, with no day-count. The other open questions keep the readings already in the v1.1 review. Those decisions are marked on `reviews/v1.1-pentest-report.md`.
+- VII.61 Limites is unchanged. QAT stays unexpanded. The Grace Period stays N+1.
 
 ## 1.1 — 2026-11-04
 
 Public release.
 
 - Version line set to **Public Release v1.1**.
-- Diction pass across every chapter, locked rooms included, after the owner answered Q1. The twelve axioms, and the paragraph that begins "Only two sexes exist," are byte-identical to v1.02. Numbers, weights, formulas, headings, and status lines are unchanged. Room-by-room notes are in `reviews/v1.1-meaning-map.md`.
-- B.1 Usus was not merged into the Glossary. The Glossary table of terms is unchanged. The sentences around that table were clarified.
-- Glossary **JI**: `E\\\_net` corrected to `E\_net`, matching the VCI formula.
-- The PACTUM lines that began "Closes the missing joint..." in III.17 Rate Chain, V.35 Limen Scholae, and V.37 Pinna are now operative sentences. Codex and Lex in those rooms are unchanged.
-- VIII.10 Prioritas: the parenthetical is now a sentence. It still distinguishes local-claim Prioritas from the P0–P3 grade in VII.48.
+- Clarity rewrite of the full text. The twelve axioms are unchanged. Numbers, weights, formulas, headings, and status lines are unchanged.
+- Glossary **JI** corrected from `E\\\_net` to `E\_net`, matching the VCI formula.
+- III.17, V.35, and V.37: the Pactum lines are operative sentences. Codex and Lex in those rooms are unchanged.
+- VIII.10 Prioritas: the parenthetical is a sentence. It still distinguishes that room from the P0–P3 grade in VII.48.
 - IX.2 QAT now precedes IX.3 Cycle. Neither room's text changed.
-- A blank line before the IX.1 status line, and blank lines between a status line and the next chapter heading, so Markdown does not run those lines together.
-- Forty proposed rooms, at the next free number in each department, for continuity, capture, gaming, mesh, fork and merger, autonomy, and the protection of sex, energy, and locked axioms. No existing room was renumbered. No axiom, weight, floor, or gate was edited. Detail is in `reviews/v1.1-pentest-report.md`.
+- A blank line stands before the IX.1 status line, and between a status line and the next chapter heading.
+- Added 40 rooms: B.1 Usus, I.9 Cingulum, I.10 Clausura, II.30 Sexus Verus, II.31 Pupillus, II.32 Census, III.20 Aerarium, III.21 Manus, III.22 Circulus, III.23 Otiosus, III.24 Veritas Energiae, IV.25 Calibratio, IV.26 Schisma, IV.27 Sterilitas, IV.28 Radix Dispersa, V.40 Exemplar, V.41 Fama, V.42 Sensus, V.43 Incrementum, VI.29 Ereptio, VII.56 Architectus Absens, VII.57 Clavis Viva, VII.58 Patronus, VII.59 Sortitio, VII.60 Modulus, VII.61 Limites, VII.62 Autonomia, VII.63 Intercessio, VIII.21 Copia, VIII.22 Forum Externum, VIII.23 Insula, VIII.24 Mora, VIII.25 Discordia, VIII.26 Furca, VIII.27 Fusio, VIII.28 Ingressus, VIII.29 Emptio, VIII.30 Triplex, VIII.31 Arbiter Externus, IX.4 Fructus. No existing room was renumbered.
 
 ### Known issues in 1.02, and their state in 1.1
 
-The three issues listed under 1.02 below are addressed in 1.1, as the bullets above say. The history is kept. Other audit notes (duplicate 1.6 numbering, two rooms named Horologium, Nefas lines VII and XII, "eight departments," symbol names in I.IV and IX.1, the verb "uncompromise") were not structurally changed. The diction pass clarified sentences around them and left those collisions in place. Open questions are in the pentest report.
+The three issues listed under 1.02 below are addressed in 1.1. The history is kept. Duplicate numbering of 1.6, the two rooms named Horologium, Nefas lines VII and XII, the word "eight" in I. Carta, the symbol names in I.IV and IX.1, and the verb "uncompromise" were left as written.
 
 ## 1.02
 
