@@ -2,6 +2,10 @@
 
 Public versions of *Sapiens Novus — Constitutio Intermundia*. The text names no calendar date. Headings here follow the version in the file.
 
+## 1.12.1 — 2026-11-05
+
+- V.31 Traditio, LEX 74AV now reads: What failed is pruned. The drill stays. Same meaning; no other text changed; axioms unchanged.
+
 ## 1.12 — 2026-11-05
 
 - Version line set to **Public Release v1.12**. `date-released` in `CITATION.cff` is 2026-11-05.

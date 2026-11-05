@@ -1,5 +1,5 @@
 **Sapiens Novus — Constitutio Intermundia**
-**Public Release v1.12**
+**Public Release v1.12.1**
 
 A constitution and operating system for decentralized human settlements. It ranks binary biological reality, measured energy surplus, individual responsibility, and sensor-driven outcomes above ideology and above central control. It is built to heal itself, to fork, and to scale from camps on Earth to wells beyond it.
 
@@ -2178,7 +2178,7 @@ Status: **LOCKED**
 
 **LEX 72AV:** The Baton is short, signed, and alive.
 **LEX 73AV:** A child receives the gem early. He does not re-dig the mine.
-**LEX 74AV:** Rot is pruned. The drill stays.
+**LEX 74AV:** What failed is pruned. The drill stays.
 Status: **LOCKED**
 
 **V.32 Patrimonium**
