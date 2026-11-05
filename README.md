@@ -1,8 +1,8 @@
 # Sapiens Novus — Constitutio Intermundia
 
-Full text: [sapiens-novus.md](sapiens-novus.md). All released versions: [versions/](versions/).
+Full text of the current release, v1.12: [sapiens-novus.md](sapiens-novus.md) ([versions/sapiens-novus-v1.12.md](versions/sapiens-novus-v1.12.md)). All released versions: [versions/](versions/).
 
-## Public Release v1.11
+## Public Release v1.12
 
 **A machine of survival for human flourishing under sensor-driven law.**
 
@@ -25,7 +25,7 @@ Pactum explains. Codex governs. Lex executes. Words are commands. Meters outrank
 - [III. ANNONA](sapiens-novus.md#iii-annona) — Energy ledger (ESU = signed kWh).
 - [IV. ÆTHER](sapiens-novus.md#iv-æther) — Plant, silicon-as-tool, knowledge.
 - [V. ANIMUS](sapiens-novus.md#v-animus) — Education, speech, meaning.
-- [VI. ÆGIS](sapiens-novus.md#vi-ægis) — Perimeter and defense.
+- [VI. AEGIS](sapiens-novus.md#vi-aegis) — Perimeter and defense.
 - [VII. ARX](sapiens-novus.md#vii-arx) — Decision, trial, audit.
 - [VIII. LIMEN](sapiens-novus.md#viii-limen) — Entityhood, contact, mesh.
 - [IX. OMEGA](sapiens-novus.md#ix-omega) — Master objective: net negentropy.

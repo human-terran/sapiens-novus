@@ -2,6 +2,15 @@
 
 Public versions of *Sapiens Novus — Constitutio Intermundia*. The text names no calendar date. Headings here follow the version in the file.
 
+## 1.12 — 2026-11-05
+
+- Version line set to **Public Release v1.12**. `date-released` in `CITATION.cff` is 2026-11-05.
+- Spelling: ÆGIS is now written AEGIS throughout. ÆTHER keeps the Æ.
+- Lex tags for Department VI use the code AEG, replacing ÆG.
+- Lex tags are numbered 1..N straight through each chapter and no longer restart in each room, for example LEX 1ÆT to LEX 67ÆT in ÆTHER. The Glossary GL tags run 1..9 the same way. The front sections Praefatio, Heritas, and Alpha keep their own short runs. The text of every Lex line is unchanged.
+- LEX 2GL describes the new tag format: a number plus a letter code, numbered 1..N inside each chapter.
+- The twelve axioms are unchanged. No meaning, number, weight, formula, heading, or status line changed.
+
 ## 1.11 — 2026-11-04
 
 - Version line set to **Public Release v1.11**. `date-released` in `CITATION.cff` is 2026-11-04.
