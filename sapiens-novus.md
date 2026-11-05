@@ -1,5 +1,5 @@
 **Sapiens Novus — Constitutio Intermundia**
-**Public Release v1.12.1**
+**Public Release v1.12.2**
 
 A constitution and operating system for decentralized human settlements. It ranks binary biological reality, measured energy surplus, individual responsibility, and sensor-driven outcomes above ideology and above central control. It is built to heal itself, to fork, and to scale from camps on Earth to wells beyond it.
 
@@ -360,7 +360,7 @@ Status: **LOCKED**
 
 **CODEX:** This is the root constant. A law that does not serve it is error. Flourishing is binary sex, an intact genome, cognition, vitality, and children in a house that stands. The far horizon is Homo Novus. Captured surplus is the only honest meter of a civilization. Trade and logistics serve that surplus. Complexity is knowledge, plant, and culture, braced against the second law. Parasitism is a transfer from those who yield to those who do not: a desk without a watt, a dole without reciprocity, corruption, genetic load kept as fashion, or a meme that drains the will.
 
-Every act answers three questions. Does it raise surplus? Does it raise biological or cognitive excellence? Does it cut rot, or cut the free-rider? Work that claims ascent must clear all three. Rest, sport, dance, and craft count when they return the body to readiness. Collapse of will, of mind, or of drive is Terminal Entropy, and Transport sheds it. A proved high-tier crime is shed under 7.10. What lowers net negentropy is waste heat.
+Every act answers three questions. Does it raise surplus? Does it raise biological or cognitive excellence? Does it minimize entropy and the free-rider while maximizing human flourishing? Work that claims ascent must clear all three. Rest, sport, dance, and craft count when they return the body to readiness. Collapse of will, of mind, or of drive is Terminal Entropy, and Transport sheds it. A proved high-tier crime is shed under 7.10. What lowers net negentropy is waste heat.
 
 Root Code sits under the same three questions. A clause that cannot show a meter, a karyotype, or a contract, on the same test it applies to others, is doctrine, and it opens 1.5. Detection without a motion is an Entropy Event. A heal requires Integration, EVL, and the silicon briefers. There is no solo patch of Root.
 
@@ -1679,7 +1679,7 @@ Status: **LOCKED**
 
 **CODEX:** Beside the Forum sits Cursus: a classified catalog of every lawful craft and science the Node will recognize, from first principles to the examining grade. Lines are published by category. Each line carries Gradus G0 through G5. G0 is novice under an Adjutor. G5 may examine that line. Gradus is a hiring signal. It does not mint Franchise, speech, or Neutralization.
 
-Access is Node-interior. Only a Protected member of this Node books an exam, takes a Cursus seat, or lists a Cursus-gated job on this Forum. A Neutral resident may read the catalog. An outsider to Axiom OS has no seat, no exam, and no listing. A peer Node may recognize a signed Gradus by contract. It does not walk this hall as of right.
+Access is Node-interior. Only a Protected member of this Node books an exam, takes a Cursus seat, or lists a Cursus-gated job on this Forum. A Neutral resident may read the catalog. An outsider to Sapiens Novus OS has no seat, no exam, and no listing. A peer Node may recognize a signed Gradus by contract. It does not walk this hall as of right.
 
 A Gradus is issued only after a published exam. Life-critical lines — plant, vein, pharmacy, weapons, child's exam, wall — are sat in person before a named G5 and a Speculum record. Other lines may be sat remotely when identity, isolation, and no-proxy are proven to EVL and a human proctor. Silicon may drill and mark drafts. A human signs the packet. A bought or proxied exam is fraud.
 
@@ -1806,7 +1806,7 @@ Status: **LOCKED**
 
 Household school (2.8) satisfies the duty if the child clears the published exam. Venues, exam cadence, silicon tutors, and the ban on a school monopoly are set out in 5.34. Indoctrination houses are shut upon confirmation. Assets move to Stability Reserve. Operators stand EEP.
 
-If they touched minors or preached solicitation of massacre, they are high-tier and run 7.10. Japanese household rule: do not take what is not yours; do not dump disorder on the common floor; finish what you start; keep the body clean. German household rule: say the true number; keep appointments; do your Pflicht.
+If they touched minors or preached solicitation of massacre, they are high-tier and run 7.10. Household rule: take nothing that is not yours; leave no disorder on the common floor; finish what you start; keep the body clean; say the true number; keep appointments; do your duty.
 
 **LEX 3AV:** Non-empirical doctrine does not write school or statute.
 **LEX 4AV:** Practical arts are mandatory, not electives.
@@ -2174,7 +2174,7 @@ Status: **LOCKED**
 
 **PACTUM:** The gem is handed to the child. The child is not made to mine the mountain again.
 
-**CODEX:** Each household, and each Node, keeps a Living Baton: a short, dated, signed packet of what worked — maxims, failures, tools, recipes, plant notes, pair-conduct, the stoic drills, and the Patrimonium lines from 5.32. Vigil prunes rot and adds a proven line each SMW. Parents read it aloud before a child can read. School does not replace the house. The child improves the packet and hands it on. Names of schools are not statute. The drill is. A creed that wants the Baton as a catechism fails 5.30.
+**CODEX:** Each household, and each Node, keeps a Living Baton: a short, dated, signed packet of what worked — maxims, failures, tools, recipes, plant notes, pair-conduct, the stoic drills, and the Patrimonium lines from 5.32. Vigil prunes what failed and adds a proven line each SMW. Parents read it aloud before a child can read. School does not replace the house. The child improves the packet and hands it on. Names of schools are not statute. The drill is. A creed that wants the Baton as a catechism fails 5.30.
 
 **LEX 72AV:** The Baton is short, signed, and alive.
 **LEX 73AV:** A child receives the gem early. He does not re-dig the mine.
@@ -3755,7 +3755,7 @@ Status: **LOCKED**
 
 **PACTUM:** Many wells, and no throne. This prevents both the lonely camp and the planetary desk.
 
-**CODEX:** Axiom OS and this people grow by seed, not by absorbing a map. A Node is a vertex. The edges are trade, exam-root hashes, EVL challenge, rescue contracts, Tabula and Forum bookings, and the broadcast leg of Trinitas. The mesh may be thin. It need not cover a country, a continent, or a planet before the next vertex stands. Off-Earth vertices are Nodes or forks (8.9). No mesh organ writes Pactum, Codex, Lex, mint, school, or border for another Node (8.8). Recognition of a peer is weather plus meters, not a parliament. Commercial disputes between Nodes go to a published arbitration convention with a staked bond from each Stability Reserve. Constitutional questions stay inside each Node. Gradus and UID hashes may be recognized by contract and re-exam.
+**CODEX:** Sapiens Novus OS and this people grow by seed, not by absorbing a map. A Node is a vertex. The edges are trade, exam-root hashes, EVL challenge, rescue contracts, Tabula and Forum bookings, and the broadcast leg of Trinitas. The mesh may be thin. It need not cover a country, a continent, or a planet before the next vertex stands. Off-Earth vertices are Nodes or forks (8.9). No mesh organ writes Pactum, Codex, Lex, mint, school, or border for another Node (8.8). Recognition of a peer is weather plus meters, not a parliament. Commercial disputes between Nodes go to a published arbitration convention with a staked bond from each Stability Reserve. Constitutional questions stay inside each Node. Gradus and UID hashes may be recognized by contract and re-exam.
 
 Direct exchange between Nodes is the default. A hub that becomes the only path is concentration (3.5) and is forked. A camp below Entityhood is a camp. It may trade. It does not vote as a Node.
 
@@ -3968,7 +3968,7 @@ The Node exists to raise living order against decay. This is the sole metric to 
 
 **PACTUM:** The aim is written as a sum over time. This prevents prayers from hiding inside maximums, and it prevents scores from consuming the species.
 
-**CODEX:** Ω\* = max\_N ∫ t0→T of e^(-ρ(t−t0)) × Er × [Ψ × Es × (C + α A) − λ(S + P)] × G × Φ dt − κ D. Read it as a farmer reads a season: useful work each day, reduced slightly for later years (ρ ≈ 0.001), summed over a rolling fifty-year horizon. Useful work is healthy fertile people, times energy held, times ordered skill and beauty, minus rot and free-riding. λ subtracts ruin and the free-rider. It does not subtract the cold shower or the booked fight. If any Prime question fails, or a Final Invariant is sold, the day counts as zero. If the score consumes spare bloodlines, exits, or tools, subtract that theft. Excess above design load stores toward I\_built rather than increasing Es. Every 90 days the living product of biology, energy, and skill must not fall more than ε. A short-cycle surplus that EVL projects as a net decrease of the fifty-year Ω\* integral is counted as entropy, not as ascent. Stay down past one winter cycle and Terminal Entropy Protocol opens. Three seals sign the packet. Default weights α ≥ 0.05, λ, and κ are published in the activation hash and move only as a module patch with an EVL counterfactual. A citizen dashboard translates Ω\* shift into caloric availability, kinetic security, and habitat stability. A letter in the line is a meter or a published weight, not a god.
+**CODEX:** Ω\* = max\_N ∫ t0→T of e^(-ρ(t−t0)) × Er × [Ψ × Es × (C + α A) − λ(S + P)] × G × Φ dt − κ D. Read it as a farmer reads a season: useful work each day, reduced slightly for later years (ρ ≈ 0.001), summed over a rolling fifty-year horizon. Useful work is healthy fertile people, times energy held, times ordered skill and beauty, minus entropy and free-riding. λ subtracts ruin and the free-rider. It does not subtract the cold shower or the booked fight. If any Prime question fails, or a Final Invariant is sold, the day counts as zero. If the score consumes spare bloodlines, exits, or tools, subtract that theft. Excess above design load stores toward I\_built rather than increasing Es. Every 90 days the living product of biology, energy, and skill must not fall more than ε. A short-cycle surplus that EVL projects as a net decrease of the fifty-year Ω\* integral is counted as entropy, not as ascent. Stay down past one winter cycle and Terminal Entropy Protocol opens. Three seals sign the packet. Default weights α ≥ 0.05, λ, and κ are published in the activation hash and move only as a module patch with an EVL counterfactual. A citizen dashboard translates Ω\* shift into caloric availability, kinetic security, and habitat stability. A letter in the line is a meter or a published weight, not a god.
 
 **LEX 1MG:** Ω\* = max\_N ∫ e^(-ρt) Er [Ψ Es (C + α A) − λ(S+P)] G Φ dt − κ D.
 **LEX 2MG:** Es = Ed (1 − e^(-Ea/Ed)).

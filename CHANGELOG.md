@@ -2,6 +2,15 @@
 
 Public versions of *Sapiens Novus — Constitutio Intermundia*. The text names no calendar date. Headings here follow the version in the file.
 
+## 1.12.2 — 2026-11-05
+
+- II. Prime Directive: the third question now asks whether an act minimizes entropy and the free-rider while maximizing human flourishing.
+- IX.1 Master Formula: the season is read as useful work minus entropy and free-riding.
+- V.31 Traditio: Vigil prunes what failed, and adds a proven line.
+- V.2 Educational Curriculum: the household rules are one neutral Household rule.
+- IV.22 Cursus and VIII.15 Rete: the operating system is named Sapiens Novus OS.
+- Axioms unchanged; no number, weight or formula changed.
+
 ## 1.12.1 — 2026-11-05
 
 - V.31 Traditio, LEX 74AV now reads: What failed is pruned. The drill stays. Same meaning; no other text changed; axioms unchanged.
