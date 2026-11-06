@@ -1,10 +1,10 @@
 # Changelog
 
-Public versions of *Sapiens OS · Constitutio Intermundia*. The text names no calendar date. Headings here follow the version in the file.
+Public versions of *Sapiens OS — Constitutio Intermundia*. The text names no calendar date. Headings here follow the version in the file.
 
 ## 1.12.3 — 2026-11-06
 
-- The public name is now Sapiens OS. The combined title is Sapiens OS · Constitutio Intermundia (middle dot). In the current text, Sapiens Novus and Sapiens Novus OS are written Sapiens OS. Constitutio Intermundia is unchanged. Homo Novus, Lingua Novus, and Axiom OS are unchanged.
+- The public name is now Sapiens OS. In the current text, Sapiens Novus and Sapiens Novus OS are written Sapiens OS. Constitutio Intermundia is unchanged. Homo Novus, Lingua Novus, and Axiom OS are unchanged.
 - Axioms unchanged; no number, weight or formula changed.
 
 ## 1.12.2 — 2026-11-05

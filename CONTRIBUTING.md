@@ -1,6 +1,6 @@
 # Contributing
 
-This repository publishes the text of *Sapiens OS · Constitutio Intermundia*, Public Release v1.x. The file is [`sapiens-novus.md`](sapiens-novus.md).
+This repository publishes the text of *Sapiens OS — Constitutio Intermundia*, Public Release v1.x. The file is [`sapiens-novus.md`](sapiens-novus.md).
 
 A change merged here updates that public text under the [GNU General Public License v3.0](LICENSE). It does not etch Root, move an Axiom, or stand in for the instrument's own amendment gate. That gate is the room **V. Modularity and Amendment** under **I. PRIMA**. Read it before you propose a change that touches an Axiom, the Oracle, the Ne floor, Neutralization, VCI weights, or the Protected-List.
 

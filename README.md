@@ -1,4 +1,4 @@
-# Sapiens OS · Constitutio Intermundia
+# Sapiens OS — Constitutio Intermundia
 
 Full text of the current release, v1.12.3: [sapiens-novus.md](sapiens-novus.md) ([versions/sapiens-novus-v1.12.3.md](versions/sapiens-novus-v1.12.3.md)). All released versions: [versions/](versions/).
 
