@@ -1,5 +1,5 @@
-**Sapiens Novus — Constitutio Intermundia**
-**Public Release v1.12.2**
+**Sapiens OS · Constitutio Intermundia**
+**Public Release v1.12.3**
 
 A constitution and operating system for decentralized human settlements. It ranks binary biological reality, measured energy surplus, individual responsibility, and sensor-driven outcomes above ideology and above central control. It is built to heal itself, to fork, and to scale from camps on Earth to wells beyond it.
 
@@ -27,7 +27,7 @@ Pactum explains. Codex governs. Lex executes. Words are commands. Meters outrank
 # 0. PRAEFATIO
 ###### RADIX > 0. PRAEFATIO
 
-*Sapiens Novus — Constitutio Intermundia* is the digital and biological marrow of a new civilization. It is an operating consciousness and a techno-deterministic architecture: a sovereign constitution joined to a technical operating system (Axiom OS), made to govern a decentralized web of human Nodes. The text joins law, energy standards, biological imperatives, and kinetic defense into one order that runs on Earth and beyond it. It is fluid rather than rigid. It heals itself, and it can evolve, adjusting its parameters to the pace of environmental change and of human evolution. No single person controls it, and no central office controls it. At its core is **net negentropy**: ordered complexity held against entropy and decay. It is a machine of survival. A living triad runs it — Steward, Memory, and People — and sensor-driven feedback keeps the triad honest.
+*Sapiens OS · Constitutio Intermundia* is the digital and biological marrow of a new civilization. It is an operating consciousness and a techno-deterministic architecture: a sovereign constitution joined to a technical operating system (Axiom OS), made to govern a decentralized web of human Nodes. The text joins law, energy standards, biological imperatives, and kinetic defense into one order that runs on Earth and beyond it. It is fluid rather than rigid. It heals itself, and it can evolve, adjusting its parameters to the pace of environmental change and of human evolution. No single person controls it, and no central office controls it. At its core is **net negentropy**: ordered complexity held against entropy and decay. It is a machine of survival. A living triad runs it — Steward, Memory, and People — and sensor-driven feedback keeps the triad honest.
 
 The text is the foundation of any settlement that aspires to **Entityhood**. It does not buy allegiance with a letterhead or with a stipend. Sovereignty sits in the Node. To enter is to take Protected status. Those who remain outside do not take part in the Cursus, the Forum, or the interior ledger.
 
@@ -46,7 +46,7 @@ The **Ordo** maps the departments that keep the Node alive. The **Glossary** hol
 
 **PACTUM:** Before any office speaks, a stranger who opens this file must know what he holds.
 
-**CODEX:** This instrument is the constitution and the operating system of Sapiens Novus under Axiom OS. It founds Nodes, and it limits them. It does not found a world parliament, a church, or a stipend for those who will not keep a well. Reading is not consent. Consent is the taking of Protected status, of a shard, and of the oath of the rooms. The inherited joints are 0.R. They name a method. They do not rewrite the Axioms.
+**CODEX:** This instrument is the constitution and the operating system of Sapiens OS under Axiom OS. It founds Nodes, and it limits them. It does not found a world parliament, a church, or a stipend for those who will not keep a well. Reading is not consent. Consent is the taking of Protected status, of a shard, and of the oath of the rooms. The inherited joints are 0.R. They name a method. They do not rewrite the Axioms.
 
 **LEX 1PR:** This file is the constitution and the OS. It is not liturgy, and it is not a foreign statute.
 **LEX 2PR:** It binds a Node and those who take Protected status under it.
@@ -97,7 +97,7 @@ Status: **LOCKED**
 ###### RADIX \> A. ORDO
 
 **0. PRAEFATIO**
-What this file is: the constitution and the operating system of Sapiens Novus under Axiom OS, and the way Pactum, Codex, and Lex are to be read.
+What this file is: the constitution and the operating system of Sapiens OS under Axiom OS, and the way Pactum, Codex, and Lex are to be read.
 
 **0.R HERITAS**
 Inherited civil method. A pact comes before a needless sack. There is no costume-empire.
@@ -143,7 +143,7 @@ The rooms proposed in this draft take the next free number in their department. 
 
 | Term                       | Definition                                                                                                                                    |
 | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| AXIOM OS                   | The constitutional operating system this file names. Sapiens Novus is the people and the law.                                                 |
+| AXIOM OS                   | The constitutional operating system this file names. Sapiens OS is the people and the law.                                                 |
 | Heritas                    | Inherited civil method. Aliases only. Not a costume-empire.                                                                                   |
 | Foedus                     | Offered pact with a well that can keep BOT and the named Axioms. Seed-path before kinetic reduction when the offer is honest.                 |
 | Astra                      | Space and contact arm. Not a private sky. Tours under 7.29. Historical hide is a crime.                                                       |
@@ -1679,7 +1679,7 @@ Status: **LOCKED**
 
 **CODEX:** Beside the Forum sits Cursus: a classified catalog of every lawful craft and science the Node will recognize, from first principles to the examining grade. Lines are published by category. Each line carries Gradus G0 through G5. G0 is novice under an Adjutor. G5 may examine that line. Gradus is a hiring signal. It does not mint Franchise, speech, or Neutralization.
 
-Access is Node-interior. Only a Protected member of this Node books an exam, takes a Cursus seat, or lists a Cursus-gated job on this Forum. A Neutral resident may read the catalog. An outsider to Sapiens Novus OS has no seat, no exam, and no listing. A peer Node may recognize a signed Gradus by contract. It does not walk this hall as of right.
+Access is Node-interior. Only a Protected member of this Node books an exam, takes a Cursus seat, or lists a Cursus-gated job on this Forum. A Neutral resident may read the catalog. An outsider to Sapiens OS has no seat, no exam, and no listing. A peer Node may recognize a signed Gradus by contract. It does not walk this hall as of right.
 
 A Gradus is issued only after a published exam. Life-critical lines — plant, vein, pharmacy, weapons, child's exam, wall — are sat in person before a named G5 and a Speculum record. Other lines may be sat remotely when identity, isolation, and no-proxy are proven to EVL and a human proctor. Silicon may drill and mark drafts. A human signs the packet. A bought or proxied exam is fraud.
 
@@ -3755,7 +3755,7 @@ Status: **LOCKED**
 
 **PACTUM:** Many wells, and no throne. This prevents both the lonely camp and the planetary desk.
 
-**CODEX:** Sapiens Novus OS and this people grow by seed, not by absorbing a map. A Node is a vertex. The edges are trade, exam-root hashes, EVL challenge, rescue contracts, Tabula and Forum bookings, and the broadcast leg of Trinitas. The mesh may be thin. It need not cover a country, a continent, or a planet before the next vertex stands. Off-Earth vertices are Nodes or forks (8.9). No mesh organ writes Pactum, Codex, Lex, mint, school, or border for another Node (8.8). Recognition of a peer is weather plus meters, not a parliament. Commercial disputes between Nodes go to a published arbitration convention with a staked bond from each Stability Reserve. Constitutional questions stay inside each Node. Gradus and UID hashes may be recognized by contract and re-exam.
+**CODEX:** Sapiens OS and this people grow by seed, not by absorbing a map. A Node is a vertex. The edges are trade, exam-root hashes, EVL challenge, rescue contracts, Tabula and Forum bookings, and the broadcast leg of Trinitas. The mesh may be thin. It need not cover a country, a continent, or a planet before the next vertex stands. Off-Earth vertices are Nodes or forks (8.9). No mesh organ writes Pactum, Codex, Lex, mint, school, or border for another Node (8.8). Recognition of a peer is weather plus meters, not a parliament. Commercial disputes between Nodes go to a published arbitration convention with a staked bond from each Stability Reserve. Constitutional questions stay inside each Node. Gradus and UID hashes may be recognized by contract and re-exam.
 
 Direct exchange between Nodes is the default. A hub that becomes the only path is concentration (3.5) and is forked. A camp below Entityhood is a camp. It may trade. It does not vote as a Node.
 
