@@ -1,4 +1,4 @@
-**Sapiens OS — Constitutio Intermundia**
+**Sapiens OS · Constitutio Intermundia**
 **Public Release v1.12.3**
 
 A constitution and operating system for decentralized human settlements. It ranks binary biological reality, measured energy surplus, individual responsibility, and sensor-driven outcomes above ideology and above central control. It is built to heal itself, to fork, and to scale from camps on Earth to wells beyond it.
@@ -27,7 +27,7 @@ Pactum explains. Codex governs. Lex executes. Words are commands. Meters outrank
 # 0. PRAEFATIO
 ###### RADIX > 0. PRAEFATIO
 
-*Sapiens OS — Constitutio Intermundia* is the digital and biological marrow of a new civilization. It is an operating consciousness and a techno-deterministic architecture: a sovereign constitution joined to a technical operating system (Axiom OS), made to govern a decentralized web of human Nodes. The text joins law, energy standards, biological imperatives, and kinetic defense into one order that runs on Earth and beyond it. It is fluid rather than rigid. It heals itself, and it can evolve, adjusting its parameters to the pace of environmental change and of human evolution. No single person controls it, and no central office controls it. At its core is **net negentropy**: ordered complexity held against entropy and decay. It is a machine of survival. A living triad runs it — Steward, Memory, and People — and sensor-driven feedback keeps the triad honest.
+*Sapiens OS · Constitutio Intermundia* is the digital and biological marrow of a new civilization. It is an operating consciousness and a techno-deterministic architecture: a sovereign constitution joined to a technical operating system (Axiom OS), made to govern a decentralized web of human Nodes. The text joins law, energy standards, biological imperatives, and kinetic defense into one order that runs on Earth and beyond it. It is fluid rather than rigid. It heals itself, and it can evolve, adjusting its parameters to the pace of environmental change and of human evolution. No single person controls it, and no central office controls it. At its core is **net negentropy**: ordered complexity held against entropy and decay. It is a machine of survival. A living triad runs it — Steward, Memory, and People — and sensor-driven feedback keeps the triad honest.
 
 The text is the foundation of any settlement that aspires to **Entityhood**. It does not buy allegiance with a letterhead or with a stipend. Sovereignty sits in the Node. To enter is to take Protected status. Those who remain outside do not take part in the Cursus, the Forum, or the interior ledger.
 
