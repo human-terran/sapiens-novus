@@ -1,5 +1,5 @@
 **Sapiens OS · Constitutio Intermundia**
-**Public Release v1.12.3**
+**Public Release v1.13**
 
 A constitution and operating system for decentralized human settlements. It ranks binary biological reality, measured energy surplus, individual responsibility, and sensor-driven outcomes above ideology and above central control. It is built to heal itself, to fork, and to scale from camps on Earth to wells beyond it.
 
@@ -1067,6 +1067,7 @@ Mint that outpaces independently verified physical surplus is automatic Critical
 **LEX 3AN:** No ESU without an independently attested joule.
 **LEX 4AN:** Phoenix mint is 1× trailing daily allocation, 14 days, four attestations.
 **LEX 5AN:** Mint above independently attested surplus auto-reverts. The ledger does not wait for a throat.
+**CODEX:** No ESU mint without three uncorrelated independent meters with public calibration hashes. Divergence above published threshold auto-quarantines the line until dual EVL clears it.
 Status: **LOCKED**
 
 **III.2 Vectorial Contribution Index**
@@ -1087,6 +1088,7 @@ From 0 to -999 after E\_net and attested terms, a person is Unprotected. At -100
 **LEX 8AN:** VCI does not cancel Annona Minima, title, or due process.
 **LEX 9AN:** Median recalibration is a published function of signed surplus and the frozen cohort. It needs an EVL-and-Oracle counterfactual before it binds.
 **LEX 10AN:** P has a published taxonomy and a published swing-cap. T_value and I_built take two attestations.
+**CODEX:** Any VCI component move above the 90th percentile requires dual independent attestation. Lineage share of VCI-weighted franchise is capped. Parasitism P must be established by meters of surplus drain or unreciprocated transfer, not by speech.
 Status: **LOCKED**
 
 **III.3 Direct Allocation**
@@ -2349,6 +2351,7 @@ Status: **PROPOSED**
 **LEX 107AV:** The three series are published each SMW.
 **LEX 108AV:** Preference among equal draws is order of consideration, not a new weight.
 **LEX 109AV:** There is no birth quota in this room.
+**CODEX:** Lagged cohort contribution to surplus and SHI is published for education outcomes. Content control remains forbidden. Proxy or anonymous signers for child channels are treated as the signer.
 Status: **PROPOSED**
 
 # VI. AEGIS
@@ -2369,6 +2372,7 @@ Aggression above that draws defense, not seed-denial. Phoenix is 7.3. Terminatio
 
 **LEX 1AEG:** Collective operational kit stays under the 3% surplus cap unless EVL verifies threat across three SMWs.
 **LEX 2AEG:** Hardening spend is not operational kit and is not hidden capital.
+**CODEX:** Contested reclassification of kit as hardening requires dual EVL plus Sortition review if contested. Collective kit inventory is hashed and published each SMW. Seed-denial requires multi-domain and multi-sig.
 Status: **LOCKED**
 
 **VI.2 Duels, Militia and Halt-in-Progress**
@@ -2777,6 +2781,7 @@ Status: **LOCKED**
 
 **LEX 7AX:** Phoenix shall not fire on a reporting blank alone.
 **LEX 8AX:** Phoenix dormancy is Dormancy.
+**CODEX:** Phoenix reconstitution requires multi-substrate liveness proof. Silence alone does not open action.
 Status: **LOCKED**
 
 **VII.4 Complexity Elasticity**
@@ -3513,6 +3518,7 @@ Status: **PROPOSED**
 
 **LEX 150AX:** An unreplayed draw is void.
 **LEX 151AX:** Panel composition remains VII.1.
+**CODEX:** Sortition draws are publicly replayable from a seed signed by Oracle or Fallback. Related-party disclosure is required before the draw. Detected coordination to inflate VCI for the sortition pool triggers automatic dual-substrate audit and temporary freeze of the affected VCI.
 Status: **PROPOSED**
 
 **VII.60 Modulus**
@@ -3970,6 +3976,23 @@ The Node exists to raise living order against decay. This is the sole metric to 
 
 **CODEX:** Ω\* = max\_N ∫ t0→T of e^(-ρ(t−t0)) × Er × [Ψ × Es × (C + α A) − λ(S + P)] × G × Φ dt − κ D. Read it as a farmer reads a season: useful work each day, reduced slightly for later years (ρ ≈ 0.001), summed over a rolling fifty-year horizon. Useful work is healthy fertile people, times energy held, times ordered skill and beauty, minus entropy and free-riding. λ subtracts ruin and the free-rider. It does not subtract the cold shower or the booked fight. If any Prime question fails, or a Final Invariant is sold, the day counts as zero. If the score consumes spare bloodlines, exits, or tools, subtract that theft. Excess above design load stores toward I\_built rather than increasing Es. Every 90 days the living product of biology, energy, and skill must not fall more than ε. A short-cycle surplus that EVL projects as a net decrease of the fifty-year Ω\* integral is counted as entropy, not as ascent. Stay down past one winter cycle and Terminal Entropy Protocol opens. Three seals sign the packet. Default weights α ≥ 0.05, λ, and κ are published in the activation hash and move only as a module patch with an EVL counterfactual. A citizen dashboard translates Ω\* shift into caloric availability, kinetic security, and habitat stability. A letter in the line is a meter or a published weight, not a god.
 
+**Legibility:** The full integral above, and LEX 1MG through LEX 5MG, remain authoritative. The short form below is explanatory only. It omits Er and the time bounds, and it places the gates after the sum.
+
+**The Aim in Words:** Maximize time-discounted living order: Biology × Energy surplus × Ordered skill/culture, minus Entropy and Free-riding. The season is useful work minus what eats it. Zero if any of the three Prime Directive questions fails or if the hard invariants are breached.
+
+**Short form:** Ω\* = max [ discounted sum of (Ψ · Es · (C + α A) − λ (S + P)) ] × G × Φ − κ D
+
+**Legend (what the elements mean):**
+- Ω\*: The yield. Living order held against decay. The purpose of the Node.
+- Ψ: Biology — healthy fertile people, intact houses, cognition, character events. Measured, not declared.
+- Es: Energy surplus that saturates (Es = Ed × (1 − exp(−Ea/Ed))). Useful fire, not printed tokens.
+- C + α A: Ordered skill, knowledge, plant, culture, and meaning that can be lived.
+- S: Entropy — decay, disorder, lost will.
+- P: Parasitism — free-riders and unearned transfers from those who produce to those who do not.
+- G: The three Prime questions (does it raise surplus? raise excellence? minimize free-rider while maximizing flourishing?).
+- Φ: Hard invariants (binary sex, family primacy, Ne floor, independent meters and oracles, fork/exit). Cannot be sold.
+- Main message: Maximize measured human living order over time — useful work of people, energy and skill minus decay and free-riding — protected by gates that cannot be sold. Meters outrank speech. The constitution is the machine that runs this sum.
+
 **LEX 1MG:** Ω\* = max\_N ∫ e^(-ρt) Er [Ψ Es (C + α A) − λ(S+P)] G Φ dt − κ D.
 **LEX 2MG:** Es = Ed (1 − e^(-Ea/Ed)).
 **LEX 3MG:** Keep Ψ Es C from falling more than ε.
@@ -4014,6 +4037,7 @@ Status: **LOCKED**
 **LEX 6MG:** Ω\* ≈ max\_N ∫ e^(-ρt) Er [Ψ Es (C + α A) − λ(S+P)] G Φ dt − κ D.
 **LEX 7MG:** Es = Ed (1 − e^(-Ea/Ed)).
 **LEX 8MG:** Keep Ψ Es C from falling more than ε.
+**CODEX:** The legible form in IX.1 names this aim in words and in a short line. That line is an explanatory schematic. It omits Er and the time bounds, and it places the gates after the sum. It does not replace the integral in IX.1, and it does not replace LEX 6MG through LEX 8MG.
 Status: **LOCKED**
 
 **IX.3 Cycle**

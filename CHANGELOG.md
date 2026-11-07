@@ -2,6 +2,14 @@
 
 Public versions of *Sapiens OS · Constitutio Intermundia*. The text names no calendar date. Headings here follow the version in the file.
 
+## 1.13 — 2026-11-07
+
+- Version line set to **Public Release v1.13**. Release date 07.11.2026.
+- IX.1 keeps the full integral, LEX 1MG through LEX 5MG, the weights, and the sign table. After that Codex, a legibility block gives the aim in words, a short form, and a legend. The short form is an explanatory schematic. It omits Er and the time bounds, and it places the gates after the sum. It does not replace the integral.
+- IX.2 QAT points at that legible form. LEX 6MG through LEX 8MG are unchanged.
+- Appended Codex, and no new Lex tag: III.1 (ESU mint meters), III.2 (VCI attestation, lineage cap, parasitism by meter), V.43 (education outcomes and child-channel signers), VI.1 (kit, inventory, seed-denial), VII.3 (Phoenix liveness), VII.59 (sortition replay and disclosure). No threshold, cap, or weight is invented.
+- Axioms unchanged. Core formula weights unchanged.
+
 ## Docs — 2026-11-06
 
 - SECURITY.md contact URL updated from https://sapiensnovus.org/contribute/ to https://sapiensos.org/contribute/. Constitution remains Public Release v1.12.3 (no text change).
